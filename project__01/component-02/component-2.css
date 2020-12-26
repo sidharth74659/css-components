@@ -45,7 +45,7 @@ body {
 }
 
 .option {
-  text-decoration-line: none;
+  text-decoration: none;
   color: black;
   padding: 14px 24px;
 }
@@ -57,4 +57,13 @@ body {
   border-radius: 10px;
 
   transition: background 0.2s;
+}
+
+/* TODO: Bumping crredit link infinitely */
+.credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  margin: 15px;
 }
