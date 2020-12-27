@@ -1,0 +1,155 @@
+/* 
+  • Refactor it
+  • Also make it for desktop view..(and respionsive)
+  • Make a site to upvote the pics and rank them based on it
+  • Make sure the pics only dedicated to one single topic(NNNooo pics out of topic)
+  • Add background-image and apply JavaScript
+  • Add a way to add images and store it so that you can view later???
+  • Maybe add a hover effect on img, which then removes controls and shows the date or title for image(Memorieeesss)
+  • Also try to make a slide show(if i ever have time?)
+
+  • Oops, change the circle to heart using svg or pure css and still maintain the effects
+  You can always do moree...
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: hsl(177, 50%, 85%);
+
+  --component-bg-img: url();
+  
+  --component-icon-bg-color: white;
+  --component-icon-color: tomato;
+  
+  --component-btn-large-color: hsl(202, 66%, 31%);
+  --component-btn-color: white;
+
+  /* shadow based on body background */
+  --component-shadow: hsl(177, 50%, 65%);  
+}
+
+body {
+  background: var(--body-bg-color);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.component {
+  background: grey;
+/*   opacity: .7; */
+  box-shadow: 0px 2px 10px 0px var(--component-shadow);
+  width: 300px;  
+  height: 300px;
+  margin: 40px;
+  border-radius: 15px;
+  
+  position: relative;
+}
+
+.component__circle {
+  width: 40px;
+  height: 40px;
+  background: var(--component-icon-bg-color);
+  border-radius: 200%;
+  
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component__circle__icon {
+  width: 20px;
+  height: 20px;
+  background: var(--component-icon-color);  
+  border-radius: 200%;
+
+  /* TODO : Make Love icon */
+/*   position: relative; */
+  
+
+}
+
+.component__circle__icon:hover {
+  animation : bounce .4s infinite;
+  transition: all .1s;
+}
+
+.component__circle__icon:active {
+  animation : zoom-in-out .6s;
+  transition: all .1s;
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.5); }
+
+  100% {
+    transform: scale(1); } 
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateY(0.2rem); }
+  50% {
+    transform: translateY(0); }
+  75% {
+    transform: translateY(-0.2rem); }
+  100% {
+    transform: translate(0); }
+}
+
+.component__btns {
+  
+  position: absolute;
+  bottom: 15px;
+  left: 50%;  
+  transform: translate(-50%,0);
+}
+
+.component__btn {
+  width: 20px;
+  height: 4px;
+  background: var(--component-btn-color);
+  
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  border-radius: 20%;
+}
+
+.component__btn--selected {
+  width: 40px;
+  background: var(--component-btn-large-color);
+
+  transition: all .2s;
+}
+
+
+
+/* TODO: Bumping crredit link infinitely */
+.credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  margin: 15px;
+}
