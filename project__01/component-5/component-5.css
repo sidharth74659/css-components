@@ -1,0 +1,92 @@
+/* TODO: 
+  • Add variabels for theme customization
+  • Bit of animation on checkout button
+  • Add a local svg file for uidesigndaily logo
+  • Hover effect on whole component(like scale(1.5)) or for only checkout button
+  • Choose a better fallback font
+  • add another file when clicked checkout button
+  • As usually make it responsive and....
+  • Let's see what else you can add it here
+ */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: hsl(177, 50%, 85%);
+  --imported-font-size: "Roboto";
+  --component-text-color: black;
+
+  /* shadow based on body background */
+  --component-shadow: hsl(177, 50%, 65%);
+  --component-bg-color: white;
+  --component-btn-color: hsl(202, 66%, 31%);
+  --component-svg-color: hsl(177, 50%, 65%);
+
+}
+
+body {
+  background: var(--body-bg-color);
+  font-family: var(--imported-font-size), sans-serif;
+  letter-spacing: .4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.component {
+  background-color: var(--component-bg-color);
+  border-radius: 15px;
+  padding: 32px 28px;
+
+  box-shadow: 0px 2px 10px 0px var(--component-shadow);
+  
+  display: flex;
+}
+
+.component__text {
+  color: var(--component-text-color);
+  list-style: none;
+  margin-right: 48px;
+}
+
+.component__title {
+  margin-bottom: 14px;
+  font-weight: 600;
+/*   font-weight: bold; */
+}
+
+.bold {
+  letter-spacing: .8px;
+}
+
+.component__btn {
+  background: var(--component-svg-color);
+  border-radius: 200%;
+  
+  border: none;
+  outline: none;
+  
+  width: 40px;
+  height: 40px;
+  
+  align-self: center;
+}
+/* TODO: Bumping crredit link infinitely */
+.credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  margin: 15px;
+}
+
+/* colors and position for svg is applied in "stroke" attribute inside "line" tag */
