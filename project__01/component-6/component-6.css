@@ -1,0 +1,111 @@
+/* TODO: 
+  • Didn't had the time to do much things 
+  • Think about it later
+  */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: hsl(177, 50%, 85%);
+  --imported-font-size: "Roboto";
+
+  /* shadow based on body background */
+  --component-shadow: hsl(177, 50%, 65%);
+  --component-bg-color: hsl(202, 52%, 36%);
+  --component-btn-color: hsl(202, 66%, 31%);
+
+}
+
+body {
+  background: var(--body-bg-color);
+  font-family: var(--imported-font-size), sans-serif;
+  font-weight: 100;
+  letter-spacing: .4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.component {
+  background-color: var(--component-bg-color);
+  border-radius: 15px;
+  padding: 28px 16px;
+
+  box-shadow: 0px 2px 10px 0px var(--component-shadow);
+  
+  display: flex;
+/*   justify-content: center;
+  align-items: center; */
+}
+
+.component__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 200%;
+  background: white;
+  margin-right: 20px;
+  
+/*   align-self: center; */
+/*   display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--component-bg-color);
+  
+  text-shadow: 3px 5px 0px hsl(177, 50%, 65%);
+  position: relative;
+  top: 14%;
+  left: 24%;
+}
+
+.component__text {
+  color: whitesmoke;
+  list-style: none;
+  margin-right: 48px;
+}
+
+.component__title {
+  margin-bottom: 14px;
+}
+
+.bold {
+  letter-spacing: .8px;
+}
+
+.component__btn {
+  background: var(--component-btn-color);
+  border-radius: 200%;
+  
+  border: none;
+  outline: none;
+  
+  width: 40px;
+  height: 40px;
+  
+  align-self: center;
+}
+
+/* TODO: Bumping crredit link infinitely */
+.credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  margin: 15px;
+}
+
+
+/* colors and position for svg is applied in "stroke" attribute inside "line" tag */
