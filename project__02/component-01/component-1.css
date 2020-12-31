@@ -1,0 +1,151 @@
+/* TODO:
+  • Similar alternative to Mulish font-family
+  • drop-down list for products
+  • Sharp some UI skills by designing pages for each module(Visit UICoach.com?/)
+  • Do something different when its responsive(improve existing UI)
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    hsl(357, 100%, 74%),
+    hsl(14, 100%, 69%)
+  );
+  height: 100vh;
+}
+
+/* body * {  border: 1px solid red; } */
+
+.container {
+  width: 95%;
+  height: 100vh;
+  background: white;
+  margin: 50px auto;
+
+  position: relative;
+}
+
+.nav {
+  height: 100px;
+  font-family: "Mulish", "source code pro";
+  font-weight: 600;
+  color: hsl(225, 12%, 62%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.list li {
+  list-style: none;
+  padding: 0px 20px;
+}
+
+.list li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.selected {
+  color: black;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    hsl(357, 100%, 74%),
+    hsl(14, 100%, 69%)
+  );
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.btn:hover {
+  transform: scale(1.025);
+  transition: all 0.2s;
+}
+
+.btn:active {
+  transform: scale(1);
+  transition: all 0.1s;
+}
+
+.credits-svg {
+  position: absolute;
+  bottom: 0;
+  margin: 15px;
+}
+
+@media all and (max-width: 800px) {
+  /* body * { border: 1px solid red; } */
+
+  .container {
+    margin: 0;
+    width: 100%;
+    background-color: inherit;
+  }
+
+  .nav {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .list {
+    padding-top: 30px;
+    color: white;
+  }
+
+  .svg-search {
+    fill: white;
+  }
+
+  .btn {
+    background: white;
+    color: black;
+  }
+}
+/* 
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  
+  .list {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .list li{
+    flex:1;
+  }
+
+  .list.list--right {
+  }
+} */
