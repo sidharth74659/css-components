@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url("./mitchell-luo-MdqeE4cd2BQ-unsplash.jpg");
+  height: 250px;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  padding: 10px 20px;
+  background: hsla(207, 31%, 14%, 0.644);
+  color: white;
+  text-align: center;
+}
+
+h1, p { 
+  margin-bottom: 24px;
+}
+
+p {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    hsl(357, 100%, 74%),
+    hsl(14, 100%, 69%)
+  );
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
