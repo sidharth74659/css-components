@@ -1,0 +1,123 @@
+/* TODO :
+  • Refactor HTML and CSS to SCSS.
+  • Follow the report and fix accessibility issues https://www.frontendmentor.io/solutions/codepen-site-using-plain-css-8uiFUiUnK/report
+  • Make this pen live using vercel or netlify
+*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --font-size-medium: 400;
+  --font-size-large: 700;
+  --imported-font-family: "Kumbh Sans";
+
+  --body-bg-color: hsl(183, 66%, 45%);
+  --component-header-bg-color: hsl(182, 62%, 53%);
+}
+
+body {
+  background: var(--body-bg-color);
+  font-family: var(--imported-font-family), sans-serif;
+}
+
+.main {
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 15px;
+  background: #fff;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* row-gap: 40px; */
+
+  line-height: 1.7rem;
+}
+
+.header {
+  background-color: var(--component-header-bg-color);
+  padding: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  /* width:100px; */
+  border-radius: 200%;
+  border: 6px solid white;
+  position: absolute;
+}
+
+.section {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.section .name {
+  font-weight: var(--font-size-large);
+}
+.section .age {
+  font-weight: var(--font-size-medium);
+  color: #777;
+  padding-left: 4px;
+}
+
+.section .location {
+  color: #777;
+  font-size: medium;
+}
+
+.footer {
+  border-top: 1px solid hsla(0, 0%, 47%, 0.24);
+  padding: 1rem 0.8rem;
+  margin-top: 20px;
+}
+
+.footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
+}
+
+li .number {
+  font-weight: var(--font-size-large);
+}
+
+li .category {
+  font-family: serif;
+  font-size: small;
+  color: #777;
+  letter-spacing: 1.5px;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  margin: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  line-height: 1.4rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
