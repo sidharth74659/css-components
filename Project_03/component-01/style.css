@@ -1,0 +1,157 @@
+/* TODO:
+  • :root variables for font-weight and size
+  • JS Fucntionality for strength
+  • Design Checkbox
+  • Button hover, active effect 
+  • apply box-shadow for placeholder when it is focus||active
+  • appply min-width to component
+  • change sizing units for responsiveness
+*/
+
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgb(27,26,52);
+  
+  --font-size-larger: 1.2rem;
+  --font-size-large: 0.8rem;
+  --font-size-medium: 0.75rem;
+  --font-size-small: 0.73rem;
+  --font-size-smaller: 0.66rem;
+
+  --blue-text-color: rgb(80,93,209);
+  --font-family: 'Roboto';
+  --component-bg: white;
+
+  
+}
+
+body {
+  background:var(--bg-color);
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+} 
+
+
+
+.section {
+  background: var(--component-bg);
+  border-radius: 10px;
+  width:  300px;
+}
+
+.container {
+  width:80%;
+  margin: 15px auto;
+}
+
+.header {
+  padding-top: 2rem;
+  text-align: center;
+
+}
+
+h4 {
+  font-size: var(--font-size-larger);
+  margin-bottom: 0.8rem;
+}
+
+.blue-text {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  color: var(--blue-text-color);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+  margin-bottom: 5.5rem;
+} 
+
+
+.input--field {
+  font-weight: 700;
+  font-size: var(--font-size-large);
+  text-transform: capitalize;
+  
+  display: flex;
+  flex-direction:column;
+}
+
+.input--field label {
+  margin-bottom: 4px;
+}
+
+.input--field input, .btn {
+  padding: .8rem 1rem;
+  border-radius: 5px;
+  border: 1.2px solid #777777;
+  margin-bottom: 3px;
+  outline: none;
+  
+  font-size: var(--font-size-small);
+}
+
+.small {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  padding-left: 8px;
+  text-transform: lowercase;
+  visibility: hidden;
+}
+
+.btn {
+  background: var(--bg-color);
+  color: whitesmoke;
+  font-family: Roboto;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  background: white;
+  color: var(--bg-color);  
+  transition: all .2s ease-in-out;
+}
+
+
+/* .checkbox { } */
+.checkbox::after {
+  content: "⌂";
+  color:white;;
+  background: var(--bg-color);
+  padding:2px 5px;
+  border-radius: 5px;
+}
+
+.checkbox__label {
+  font-size: .85rem;
+  font-weight: 450;
+  padding-left: .5rem;
+}
+
+
+.footer {
+  text-align: center;
+}
+
+.copy-right {
+  text-transform: capitalize;
+  color: grey;
+  font-size: var(--font-size-smaller);
+}
+
