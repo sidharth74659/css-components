@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <div class="container">
+        <ul class="list">
+          <li class="list__item list__item--header">Login Verification</li>
+
+          <li class="list__item list__item--info">To continue logging in we need you to complete one of the following:
+          </li>
+
+          <li class="list__item verification-block">
+            <ul class=" list__item--radio">
+              <li>
+                <input class="radio__input" type="radio" id="email">
+                <label class="radio__label" for="email">Verification code via email</label>
+                <div class="radio-block hide">
+                  <p class="radio__info">We'll send a code to your email<br /> that can enter to verify your identity
+                  </p>
+                  <button type="submit" class="btn btn-email">Send email Code</button>
+                </div>
+              </li>
+
+              <li>
+                <input class="radio__input" type="radio" id="sms" checked>
+                <label class="radio__label" for="sms">Verificaion code via SMS</label>
+                <div class="radio-block">
+
+                  <p class="radio__info">We'll send a code to your mobile phone<br /> that can enter to verify your
+                    identity
+                  </p>
+                  <button type="submit" class="btn btn-sms">Send SMS Code</button>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="list__item list__item--remember">
+            <input id="checkbox" type="checkbox" checked />
+            <label for="checkbox">Rememeber ths device</label>
+            <div class="radio-block">
+              <p>Don't select this option of you're using a<br /> public computer</p>
+            </div>
+
+          </li>
+
+          <li class="list__item list__item--link"><a href="#">Return to Login</a></li>
+
+        </ul>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+
+</html>

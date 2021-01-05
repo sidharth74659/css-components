@@ -1,0 +1,124 @@
+/* 
+    • Refactor code
+    • modify checkbox and radio with ::before or ::after 
+        or just throw svg
+    • Make it fucking responsive :-(O)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--body-bg-color);
+  font-family: var(--font-family);
+}
+
+:root {
+  --font-family: "Roboto", arial;
+  --font-size-larger: 1.2rem;
+  /* --font-size-large:; */
+  --font-size-mrdium: 1rem;
+  --font-size-small: 0.8rem;
+  --font-size-smaller: 0.73rem;
+
+  --font-weight-large: 600;
+  --font-weight-medium: 500;
+  /* --font-weight-small:; */
+  --body-bg-color: #1b1a34;
+  --component-bg-color: white;
+  --component-el-bg-color: #1b1a34;
+}
+
+.wrapper {
+  /* width:60%; */
+  width: 350px;
+  background-color: var(--component-bg-color);
+  border-radius: 15px;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+/* .list__item {   } */
+
+.list__item--header {
+  text-align: center;
+  font-size: var(--font-size-larger);
+  font-weight: var(--font-weight-large);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.list__item--info {
+  font-size: var(--font-size-medium);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.list__item.verification-block {
+  margin-bottom: 2rem;
+}
+.list__item--radio {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.list__item--radio li {
+  margin-bottom: 1.5rem;
+}
+
+/* .list__item--radio .radio__input {  } */
+
+.list__item--radio .radio__label,
+.list__item--remember label {
+  font-weight: var(--font-weight-medium);
+  padding-left: 8px;
+}
+
+.radio-block p {
+  padding-left: 24px;
+  color: grey;
+  font-size: var(--font-size-small);
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.btn {
+  margin-left: 24px;
+  padding: 1em 1.2em;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background: var(--component-el-bg-color);
+  color: var(--component-bg-color);
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.list__item.list__item--link {
+  text-align: center;
+  margin-top: 3rem;
+}
+.list__item.list__item--link a {
+  font-size: var(--font-size-smaller);
+  text-decoration-line: none;
+}
+
+.hide {
+  display: none;
+}
