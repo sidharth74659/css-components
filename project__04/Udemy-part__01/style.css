@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fontFamily: "Roboto";
+  --fontsize-nav: 0.95rem;
+}
+
+body {
+  font-family: var(--fontFamily);
+  background: #e8e8e0;
+}
+
+.nav {
+  min-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background: #fff;
+  column-gap: 1.2rem;
+  padding: 2.3rem 1rem;
+  flex-grow: 1;
+}
+
+.logo {
+  background-image: url(https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #3c3b37;
+  font-size: var(--fontsize-nav);
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.nav a:hover {
+  color: #0f7c8f;
+}
+
+.nav ul li {
+  list-style: none;
+  display: none;
+}
+
+.search {
+  flex-grow: 1;
+  flex-shrink: 2;
+  border: 1px solid #777777;
+  padding: 0.8rem 0.5rem;
+  border-radius: 200px;
+  display: flex;
+  align-items: baseline;
+}
+
+.search__icon {
+  color: #777777;
+  padding-left: 0.5rem;
+  padding-right: 1.2rem;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.cart-list i {
+  font-size: 1.5rem;
+}
+
+.btns {
+  display: flex;
+  column-gap: 0.6rem;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.7rem 2rem;
+  border: 1px solid #0f7c8f;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.btn.btn--logIn {
+  color: #0f7c8f;
+  background: white;
+}
+
+.btn.btn--signUp {
+  color: white;
+  background: #0f7c8f;
+}
+
+.hide {
+  display: none;
+}
+
+.section {
+  background-image: url(https://img-a.udemycdn.com/notices/home_banner/image_udlite/8a5d045c-2dd2-4a4d-bb0e-a487af8a5aa0.jpg?8ufXKTZ_1cwslj496s_knWz8D86xGBUDY9RYY8EysIIJ9LpJ_zIw7JstLCxTRQpoL-IPvKWH6iDkgu3Bp5N1pZ4hZhhzXQnL3fb6LOkwKBbabxhDqpE00mgyMSmSKXwRA2qgvG8c-jUlLxtKsiO0cmGS6Kuo8e8qfePIb0O30zQUtdOJi-aKhw);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99%;
+  margin: 0 8px;
+  height: 25vw;
+}
+
+.whatToLearn {
+  position: absolute;
+  top: 10vw;
+  left: 5%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 1px;
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 2px 4px 8px #ddd9d9;
+}
+.whatToLearn .h2 {
+  font-size: clamp(1rem,);
+  padding: 0 0 0.8rem;
+}
+.whatToLearn .h2-tag {
+  font-weight: 400;
+  color: #777777;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.whatToLearn .search {
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+.whatToLearn .search .btn--search {
+  border: none;
+  outline: none;
+  background: white;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.course-section {
+  background: #fff;
+  padding: 1rem 1.2rem;
+  padding-top: calc(2% + 5vw);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .whatToLearn {
+    top: 100px;
+    left: 25px;
+    width: 350px;
+  }
+}
+@media (max-width: 1110px) {
+  .udemyForBusiness-list {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .teachOnUdemy-list {
+    display: none;
+  }
+}
+@media (max-width: 825px) {
+  .nav .categories-list,
+.nav .search__input,
+.nav .btns {
+    display: none;
+  }
+
+  .nav .search {
+    border: none;
+    flex-grow: 0;
+  }
+  .nav .search .search__icon {
+    padding: 0;
+  }
+
+  .logo {
+    flex-grow: 1;
+  }
+
+  .hide {
+    display: inline;
+  }
+
+  .section {
+    padding: 0;
+    position: relative;
+  }
+
+  .course-section {
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 768) {
+  .section {
+    height: 1000px;
+  }
+}
+@media (max-width: 600px) {
+  .course-section .whatToLearn {
+    box-shadow: 0 0 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .course-section .whatToLearn .search {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
