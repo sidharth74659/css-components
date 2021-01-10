@@ -1,69 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Redeem Online courses</title>
-        <!-- Add a favicon for title -->
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem Online courses</title>
+    <!-- Add a favicon for title -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-    <body>
-        <nav class="nav">
-            <div class="menu-bar hide">☰</div>
-            <div class="logo"></div>
-            <ul class="categories-list">
-                <a href="#">categories</a>
-                <li>developemn</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem.</li>
-                <li>Lorem ipsum dolor sit.</li>
-            </ul>
-            <div class="search">
-                <button class="fa fa-search search__icon" type="button" title="search"></button>
-                <input class="search__input" type="text" placeholder="Search for anything" aria-label="input-field"">
-        </div>
-
-            <ul class=" udemyForBusiness-list">
-                <a href="#">Udemy for Business</a>
-                <li></li>
-                <li></li>
-                <li></li>
-                </ul>
-                <ul class="teachOnUdemy-list">
-                    <a href="#">Teach on Udemy</a>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <ul class="cart-list">
-                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="btns">
-                <button class="btn btn--logIn">Log in</button>
-                <button class="btn btn--signUp">Sign up</button>
-                </div>
-        </nav>
-
-        <section class="section">
-        </section>
-        
-        <section class="course-section">
-            <div class="whatToLearn">
-                <h2 class="h2">Dream up</h2>
-                <p class="h2-tag">Ambition accepted. Learn the latest skills to reach your professional goals.</p>
+  <body>
+    <div class="limited-offer">
+      <p><b>New student deal </b>| Sign up now to get courses for as low as ₹455 each. New users only. <br />
+        <b>Ends in <span class="timer">5h 59m 37s</span>.</b></p>
+      <i class="fas fa-times remove"></i>
+    </div>
     
-                <div class="search">
-                <input type="text" class="search__input" placeholder="What do you want to learn?" aria-label="search">
-                <button class="fa fa-search btn--search" type="button" title="search"></button>
-                </div>
-            </div>
-            <!-- <h3 class="h3">The world's largest selection of courses</h3>
+    <div class="wrapper">
+      <nav class="nav">
+        <ul class="nav-items">
+
+          <li class="nav__menu__bar hide">☰</li>
+
+          <li class="logo">
+            <img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" alt="udemy-logo">
+          </li>
+
+          <li class="nav__item  nav__item--categories">
+            <a href="#">Categories</a>
+            <ul class="drop-down">
+              <li class="nav-item">
+                <a href="#">development</a>
+                <i class="fa fa-chevron-right"></i>
+              </li>
+
+              <li class="nav-item">
+                <a href="#">Eduacation</a>
+                <i class="fa fa-chevron-right"></i>
+              </li>
+
+              <li class="nav-item">
+                <a href="#">Drawing</a>
+                <i class="fa fa-chevron-right"></i>
+              </li>
+              <li class="nav-item">
+                <a href="#">Painting</a>
+                <i class="fa fa-chevron-right"></i>
+              </li>
+            </ul>
+          </li>
+
+          <li class="search">
+            <button class="fa fa-search search__icon" type="button" title="search"></button>
+            <input class="search__input" type="text" placeholder="Search for anything" aria-label="input-field"">
+          </li>
+          
+
+        <li class="nav__item nav__item--business">
+            <a href="#">Udemy for Business</a>
+            <ul class="drop-down">
+              <li><h4 class="nav-item drop-down__text">
+                Get your team access to over 5,000 top Udemy courses, anytime, anywhere.
+              </h4></li>
+
+              <li class="nav-item">
+                <button class="btn btn--drop-down" type="button" title="Try-udemy">Try Udemy for Business</button>
+
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--teach">
+            <a href="#">Teach on Udemy</a>
+            <ul class="drop-down">
+              <li><h4 class="nav-item drop-down__text">
+                Turn what you know into an opportunity and reach millions around the world.
+              </h4></li>
+
+              <li class="nav-item">
+                <button class="btn btn--drop-down" type="button" title="Try-udemy">Learn More</button>
+
+              </li>
+            </ul>
+          </li>
+
+          <li class="hide"><button class="fa fa-search search__icon" type="button" title="search"></button></li>
+
+          <li class="nav__item nav__item--cart is-hovered">
+            <a href="#"><i class="fa fa-shopping-cart cart__icon"></i></a>
+            <ul class="drop-down">
+              <li class="nav-item drop-down__text">
+                Your cart is empty.
+               </li>
+
+              <li class="nav-item">
+                <h4><a href="#">Keep shopping</a></h4>
+              </li>
+            </ul>
+          </li>
+
+          <li class="btns">
+            <button class="btn btn--logIn" type="button" title="sign">Log in</button>
+            <button class="btn btn--signUp" type="button" title="sign">Sign up</button>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="container">
+        
+      <section class="section">
+      </section>
+
+      <section class="course-section">
+        <div class="whatToLearn">
+          <h2 class="h2">Dream up</h2>
+          <p class="h2-tag">Ambition accepted. Learn the latest skills to reach your professional goals.</p>
+
+          <div class="search-toLearn">
+            <input type="text" class="search__input" placeholder="What do you want to learn?" aria-label="search">
+            <button class="fa fa-search btn--search" type="button" title="search"></button>
+          </div>
+        </div>
+        <!-- <h3 class="h3">The world's largest selection of courses</h3>
             <p class="h3-tag">Choose from 130,000 online video courses with new additions published every month</p>
 
             <ul class="course-catalogue">
@@ -74,8 +135,12 @@
                 <li class="course-name">Data Science</li>
                 <li class="course-name">Drawing</li>
             </ul> -->
-            
-        </section>
-    </body>
 
+      </section>
+      </div>
+    </div>
+
+
+<script src="script.js"></script>
+  </body>
 </html>
