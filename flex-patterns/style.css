@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e8e8;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pattern {
+  background: #e8e;
+  border-radius: 15px;
+  margin: 12px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pattern a {
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+.section {
+  margin: 12px;
+}
+
+.section--01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.section--01 .btn {
+  background: lightblue;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.section--01 .btn:active {
+  background: blue;
+}
+.section--01 .value {
+  width: 50px;
+  text-align: center;
+}
+
+.section--02 {
+  background: #fff;
+  width: 400px;
+  padding: 12px;
+}
+.section--02 main {
+  display: flex;
+  border-bottom: 1px solid red;
+}
+.section--02 div {
+  cursor: pointer;
+  padding: 0 12px;
+}
+.section--02 div.is-active {
+  border-bottom: 2px solid red;
+}
+
+.section--03 {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  background: #e80e80;
+  padding: 12px;
+}
+.section--03 aside {
+  display: flex;
+}
+.section--03 .section--03__el {
+  padding: 12px;
+  cursor: pointer;
+  text-transform: capitalize;
+  border-radius: 3px;
+}
+.section--03 .is-active {
+  background: #fe8;
+}
+
+.section--05 {
+  display: flex;
+  height: 350px;
+  justify-content: space-between;
+  background: #e80e80;
+  padding: 12px;
+  flex-direction: column;
+}
+.section--05 aside {
+  display: flex;
+  flex-direction: column;
+}
+.section--05 .section--05__el {
+  padding: 12px;
+  cursor: pointer;
+  text-transform: capitalize;
+  border-radius: 3px;
+}
+.section--05 .is-active {
+  background: #fe8;
+}
+
+.section--06 {
+  padding: 12px;
+  background: #fff;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section--06 main {
+  text-align: center;
+}
+.section--06 main .emoji {
+  font-size: 4rem;
+}
+.section--06 main .btn {
+  margin-top: 16px;
+  padding: 12px;
+  background: #e87;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+.section--06 main .btn:hover {
+  background: #e8f;
+}
+.section--06 main * {
+  margin-bottom: 12px;
+  color: #777;
+}
+
+.section--07 main {
+  padding: 24px;
+  background: #fff;
+  border-radius: 200px;
+}
+.section--07 .emoji {
+  font-size: 2rem;
+}
+.section--07 .emoji:hover {
+  color: #777;
+  cursor: pointer;
+}
+
+.section--08 {
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: space-between;
+  border: 1px solid rgba(120, 120, 120, 0.376);
+}
+.section--08 .top {
+  padding: 24px;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.section--08 .top .emoji {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+.section--08 .top .emoji:hover {
+  cursor: pointer;
+}
+.section--08 .btn {
+  border: 1px solid rgba(120, 120, 120, 0.376);
+  padding: 8px;
+}
+
+.section--09 {
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+  align-items: space-between;
+}
+.section--09 main {
+  display: flex;
+}
+.section--09 .block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(120, 120, 120, 0.376);
+}
+.section--09 .block .top {
+  text-align: center;
+  padding: 24px;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.section--09 .block .top .emoji {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+.section--09 .block .top .emoji:hover {
+  cursor: pointer;
+}
+.section--09 .block .btn {
+  border: 1px solid rgba(120, 120, 120, 0.376);
+  padding: 8px;
+}
+
+.section--09 {
+  padding: 24px;
+  display: flex;
+}
+.section--09 .left {
+  color: #777;
+  flex: 0 1 100px;
+  padding: 12px;
+}
+.section--09 .left .emoji {
+  font-size: 3rem;
+  padding-bottom: 12px;
+}
+.section--09 .right {
+  flex: 1;
+  border: 1px solid #777;
+  padding: 12px;
+  position: relative;
+}
+.section--09 .right::before {
+  position: absolute;
+  top: 20px;
+  left: -6px;
+  content: "";
+  padding: 4px;
+  transform: rotate(-135deg);
+  border: 1px solid black;
+  border-width: 1px 1px 1px 0px;
+  border-bottom-style: red;
+}
+
+/*# sourceMappingURL=style.css.map */
