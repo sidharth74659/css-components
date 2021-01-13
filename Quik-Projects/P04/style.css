@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #51b2f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI";
+}
+
+.container {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.nav {
+  background: #fff;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem 1.2rem;
+  text-transform: capitalize;
+  border-radius: 3px;
+  color: white;
+}
+
+.btn.nav--btn {
+  background: hsl(185, 62%, 51%);
+}
+
+.btn-nav {
+  color: white;
+  background-color: #51b2f0;
+  padding: 12px 16px;
+  border-style: none;
+  border-radius: 100px;
+}
+
+.section {
+  color: white;
+  padding: 16% 7%;
+}
+
+.header {
+  line-height: 2.2rem;
+}
+
+.search {
+  display: flex;
+  margin-top: 15px;
+}
+
+.search__input {
+  border: none;
+  width: 300px;
+  padding-left: 40px;
+  height: 50px;
+}
+
+.btn.btn--search {
+  background: hsl(22, 92%, 66%);
+}
+
+.footer {
+  background-color: #fff;
+  /* padding: 1rem 1.5rem; */
+  border-radius: 5px;
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer ul {
+  list-style: none;
+  width: 33%;
+  margin: 20px 24px;
+}
+
+.footer ul li + li {
+  margin-top: 6px;
+}
+
+.footer ul li:last-child {
+  padding-left: 8px;
+}
+.tag {
+  padding: 5px 8px;
+  background: #d6c1c160;
+  border-radius: 150px;
+  color: rgb(104, 103, 103);
+}
+
+@media (max-width: 512px) {
+  .container {
+    width: 100%;
+    /* margin-top: 30px; */
+    border-radius: 0;
+  }
+
+  .search {
+    margin-top: 80px;
+    flex-wrap: wrap;
+  }
+
+  .search * {
+    flex-basis: 100%;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer ul {
+    flex-basis: 100%;
+  }
+}
+
+/* 
+.navigation{
+    background-color: white;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-list li{
+    display: flex;
+    list-style: none;
+    margin: 0px 12px;
+    padding: 16px 0;
+    align-self: baseline;
+}
+*/
