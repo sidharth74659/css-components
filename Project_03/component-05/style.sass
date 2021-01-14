@@ -1,0 +1,66 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Roboto'
+
+.main
+  width: 350px
+  border: 1px solid red
+  border-radius: 6px
+  margin: 80px auto
+  padding: 24px
+
+  .header 
+    display: flex
+    gap: 20px
+    align-items: center
+    margin: 12px
+    .img
+      width: 24px
+      height: 24px
+      background: #000
+      
+    ul
+      list-style: none
+      small
+        color: #777
+
+      
+    i  
+      width: 24px
+      height: 24px
+      background: #000
+      margin-left: auto
+     
+
+.details-catalogue      
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 20px    
+.details      
+
+  &__duration
+    margin: 24px 0
+    small
+      color: #777
+  &__category
+    .category
+      display: flex
+      align-items: center
+      margin: 8px 0
+      .category__type
+        margin-right: 8px
+      .category__stats
+        font-size: 0.8rem
+        background: hotpink
+        padding: 4px
+        border-radius: 20px
+          
+    .category__count
+      font-weight: bold
+      
+      
+      
