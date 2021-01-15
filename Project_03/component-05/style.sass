@@ -1,39 +1,64 @@
+//TODO
+// • Make resposive
+// • Add functionality(Ex: edit button)
+// • Dark theme on toggle(use variables)
+// • Refactor code
+// • Add hover effects for accessibility
+// • use SVG for rise or down on .category_stats
+
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;600&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap')
 *
   margin: 0
   padding: 0
   box-sizing: border-box
 
 body
-  font-family: 'Roboto'
+  font-family: 'Vollkorn', serif
+  background: #ebedf9
+
 
 .main
-  width: 350px
-  border: 1px solid red
+  width: 400px
   border-radius: 6px
-  margin: 80px auto
+  margin: 40px auto
   padding: 24px
-
+  background: #fff
+  box-shadow: 0px 0px 10px 4px #dbdeef
   .header 
     display: flex
     gap: 20px
     align-items: center
-    margin: 12px
+    margin-top: 1rem
+    margin-bottom: 2rem
     .img
-      width: 24px
-      height: 24px
-      background: #000
+      width: 56px
+      height: 56px
+      border-radius: 200px
       
     ul
       list-style: none
+      line-height: 20px
+      h3
+        font-weight: 600
+        font-size: 1.2rem
       small
-        color: #777
-
+        color: #959aa6
+        text-transform: lowercase
       
     i  
       width: 24px
       height: 24px
-      background: #000
       margin-left: auto
+      color: #959aa6
+
+      
+.details 
+  &__duration
+    line-height: 1.2rem
+
      
 
 .details-catalogue      
@@ -44,23 +69,63 @@ body
 
   &__duration
     margin: 24px 0
+    h3
+      text-transform: lowercase
+      font-size: 1.4rem
     small
-      color: #777
+      font-family: 'Roboto'
+      color: #959aa6
+      font-size: 0.75rem
   &__category
     .category
       display: flex
       align-items: center
       margin: 8px 0
       .category__type
-        margin-right: 8px
-      .category__stats
+        text-transform: uppercase
+        font-family: 'Roboto'
         font-size: 0.8rem
-        background: hotpink
-        padding: 4px
+        font-weight: 700
+        padding-right: 4px
+      .category__stats
+        font-family: 'Volkhov', serif
+        background: hsl(8, 71%, 93%)
+        border: 1px solid hsl(8, 71%, 83%)
+        padding: 4px 10px
         border-radius: 20px
+        font-size: 0.8rem
+        font-weight: 600
+      i  
+        padding-right: 6px
+  &__category.increase .category__stats 
+    background: hsl(104, 100%, 93%)
+    border: 1px solid hsl(104, 100%, 63%)
+
           
     .category__count
-      font-weight: bold
+      font-weight: bold   
       
+.footer      
+  .btn
+    background: #171717
+    padding: 1rem
+    color: white
+    font-size: 0.95rem
+    letter-spacing: 0.4px
+    border-radius: 6px
+    border: none
+    outline: none
+    margin: 3.5rem 0 1rem
+    cursor: pointer
+      
+      
+.attributions     
+  margin-left: 2rem
+  p
+    margin: .5rem 0
+    padding-left: 1.5rem
+  p:before
+    content: '•'
+    padding-right: 0.5rem
       
       
