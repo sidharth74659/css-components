@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #e3d6f6 30%, #b6beec) no-repeat;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  width: 300px;
+  padding: 0 1.5rem;
+  background: #fff;
+  margin: 40px auto;
+  border-radius: 12px;
+}
+.main .header {
+  padding: 2rem 0;
+}
+.main .title {
+  margin-bottom: 12px;
+}
+.main a {
+  color: #7a55f6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.form .name,
+.form .email {
+  display: flex;
+  margin: 1rem 0;
+}
+.form .name label,
+.form .email label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.form .name input,
+.form .email input {
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  padding: 1rem 0.8rem;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+.form .name #input__fname,
+.form .email #input__fname {
+  border-radius: 6px 0 0 6px;
+}
+.form .name #input__lname,
+.form .email #input__lname {
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+}
+.form .email {
+  margin-top: 0;
+  flex-direction: column;
+}
+.form .terms {
+  margin-top: 0.9rem;
+  width: 80%;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-bottom: 2.5rem;
+}
+.footer .btns {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.footer .btns a {
+  color: white;
+}
+.footer .btns i {
+  font-size: 1.5rem;
+}
+.footer .btns a + a {
+  margin-left: 0.8rem;
+}
+
+.btn {
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}
+
+.btn.btn--email {
+  background: #ba54ef;
+  box-shadow: 0px 7px 15px 0px #b852ef;
+}
+
+.btn.btn--fb {
+  background: #657ef0;
+}
+
+.btn.btn--twitter {
+  background: #65b2f0;
+}
+
+/*# sourceMappingURL=style.css.map */
