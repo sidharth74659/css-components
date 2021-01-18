@@ -1,0 +1,160 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: yellow;
+  height: 100vh;
+  background: #1c505b;
+  font-family: sans-serif;
+}
+
+.header {
+  color: #e1a848;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.header .menu li {
+  color: #779399;
+  font-size: 1rem;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .menu li.selected {
+  border-bottom: solid white;
+  color: white;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+}
+
+.social-media li {
+  width: 28px;
+  height: 28px;
+  border-radius: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media li .fab {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.main {
+  color: white;
+  display: flex;
+  flex-grow: 1;
+  padding: 20px;
+  margin: 2rem 0;
+  justify-content: center;
+}
+.main .img {
+  background: #9ad4c9;
+  width: 40%;
+  height: 400px;
+}
+.main .content {
+  width: 60%;
+  height: 400px;
+  margin-left: 1rem;
+}
+
+.content h2 {
+  font-weight: normal;
+  font-size: 3.8rem;
+}
+.content h2 span {
+  color: #dba548;
+  text-transform: capitalize;
+  border-bottom: solid #dba548;
+}
+
+.content p {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid #9cd7cc;
+  padding-left: 4rem;
+  font-size: 1.25rem;
+  color: #779399;
+  line-height: 2.3rem;
+}
+.content p span {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.content .re-direct {
+  border-left: 3px solid transparent;
+  padding-left: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.re-direct .btn {
+  color: black;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  background: #9cd7cc;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.re-direct a {
+  text-decoration-line: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.re-direct a span {
+  width: 28px;
+  height: 28px;
+  border-radius: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.re-direct a i {
+  color: white;
+  font-size: 0.5rem;
+}
+
+.attributions {
+  margin-left: 2rem;
+}
+.attributions p {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+.attributions p:before {
+  content: "•";
+  padding-right: 0.5rem;
+}
+.attributions p:after {
+  content: ".";
+  padding-left: 0.1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
