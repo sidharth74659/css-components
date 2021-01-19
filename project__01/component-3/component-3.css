@@ -24,14 +24,18 @@
   --component-bg-color: white;
   --component-btn-color: hsl(202, 66%, 31%);
   --component-svg-color: hsl(177, 50%, 65%);
-  
+}
+
+::selection {
+  color: white;
+  background-color: #f54f74;
 }
 
 body {
   background: var(--body-bg-color);
   font-family: var(--imported-font-size), sans-serif;
   font-weight: 100;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
 
   display: flex;
   justify-content: center;
@@ -39,14 +43,16 @@ body {
   height: 100vh;
 }
 
-.wrapper {
+.container {
   border-radius: 15px;
-  background-color:white;
+  background-color: white;
   box-shadow: 0px 6px 10px 0px var(--component-shadow);
+  width: 430px;
 }
 
 .component {
-  padding: 36px 32px;
+  max-width: 450px;
+  padding: 2rem 1.8rem;
   display: flex;
 }
 
@@ -56,8 +62,9 @@ body {
 
 .component__text {
   color: var(--component-text-color);
+  text-transform: capitalize;
   list-style: none;
-  margin-right: 196px;
+  flex-grow: 2;
 }
 
 .component__title {
@@ -67,32 +74,68 @@ body {
 .component__btn {
   background: var(--component-svg-color);
   border-radius: 200%;
-  
   border: none;
-  outline: none;
-  
   width: 40px;
   height: 40px;
-  
   align-self: center;
 }
 
 .component__btn.component__btn-logo {
+  width: 60px;
+  height: 60px;
   margin-right: 12px;
   background: white;
-  border: 1px dashed black;    
+  border: 1px dashed black;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0px 0px 0px 3px #fff;
+  transition: transform 0.5s ease-out;
 }
 
+.component:first-child .component__btn.component__btn-logo {
+  background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+}
+.component:nth-child(2) .component__btn.component__btn-logo {
+  background-image: url(https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fHBlcnNvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+}
+.component:last-child .component__btn.component__btn-logo {
+  background-image: url(https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+}
 
-/* TODO: Bumping crredit link infinitely */
-.credits {
+.component__btn-logo:active {
+  transform: rotate(360deg);
+  transition: transform 2s;
+}
+button.component__btn:hover {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+button.component__btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+button.component__btn:active {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.attributions {
   position: absolute;
-  bottom: 0;
-  right: 0;
-
-  margin: 15px;
+  bottom: 50px;
+  left: 50px;
 }
-
-
-
+.attributions p {
+  margin: 0.5rem 0;
+  background: #d97694;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  color: white;
+}
+.attributions p:before {
+  content: "•";
+  padding-right: 0.5rem;
+}
+code {
+  color: yellow;
+  font-weight: bold;
+}
 /* colors and position for svg is applied in "stroke" attribute inside "line" tag */

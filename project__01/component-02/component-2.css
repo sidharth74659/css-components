@@ -1,69 +1,86 @@
-/* TODO:
-  • animate from circle to the resulted componnent
-  • vertical column when exceeds min-width
- */
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version
+*/
 
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 :root {
   --body-bg-color: hsl(177, 50%, 85%);
-
-  /* shadow based on body background */
   --component-shadow: hsl(177, 50%, 65%);
-
-  --imported-font-size: "Roboto";
+  --imported-font-family: "Roboto", sans-serif;
 }
-
 body {
-  /*  For centering component */
   background: var(--body-bg-color);
-  font-family: var(--imported-font-size), sans-serif;
-
+  font-family: var(--imported-font-family);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100vh;
 }
-
-.wrapper {
-  background: white;
-  border-radius: 12px;
-  padding: 20px 8px;
-  
-  box-shadow: 0px 2px 10px 0px var(--component-shadow);
-}
-
 .options {
-  display: flex;
   list-style: none;
+  padding: 1.2rem 0.5rem;
+  background: #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 2px 10px 0 var(--component-shadow);
+  box-shadow: 0 2px 10px 0 var(--component-shadow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-
 .option {
   text-decoration: none;
-  color: black;
-  padding: 14px 24px;
+  color: #000;
+  padding: 0.9em 2em;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
-
-/* applied when an element is clicked */
 .option.selected {
   background: #2c698d;
-  color: whitesmoke;
-  border-radius: 10px;
-
-  transition: background 0.2s;
+  color: #f5f5f5;
 }
-
-/* TODO: Bumping crredit link infinitely */
-.credits {
+.attributions {
   position: absolute;
-  bottom: 0;
-  right: 0;
-
-  margin: 15px;
+  bottom: 50px;
+  left: 50px;
+}
+.attributions p {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+}
+.attributions p:before {
+  content: "•";
+  padding-right: 0.5rem;
+}
+code {
+  color: green;
+  font-weight: bold;
+}
+@media (max-width: 360px) {
+  .options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .option {
+    display: block;
+  }
 }
