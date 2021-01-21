@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+/*     background: url(https://images.unsplash.com/reserve/DHHQbqc0RrWVf0uDNe5E_The%20Litte%20Cafe.jpg?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8aWNlJTIwY3JlYW0lMjB0cnVja3xlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) no-repeat;
+  background-size: cover;
+  background-position: center center; */
+  font-family: sans-serif; 
+  background: #bf0413;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  color: white;
+}
+
+.logo {
+  background: linear-gradient(to right bottom, #730217, #D9738E, #D9072D, #D9738E, #8C031C);
+  padding: .2rem 0.8rem;
+  border-radius: 0px 20px 20px 0;
+  color: #F2F2F2;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  font-size: 0.95rem;
+  font-weight: bold;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.nav-list li + li {
+  padding-left: 2rem;
+}
+
+.btn {
+  border: 1px solid #d96c89;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  background: transparent;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+.main {
+  width: 400px;
+  margin: 6rem;
+/*   margin-left: auto; */
+}
+
+.main .pre-tag {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #D96C89;
+  font-size: 0.8rem;
+  letter-spacing: 1.4px;
+}
+
+.main .theme {
+  font-size: 3rem;
+  color: #E31445;
+  margin: 0.5rem 0;
+}
+
+
+.main .post-tag {
+  width: 85%;
+    color: #D96C89;
+line-height: 1.4rem;
+}
+
+.main .btn--main {
+  margin-top: 2.5rem;
+}
