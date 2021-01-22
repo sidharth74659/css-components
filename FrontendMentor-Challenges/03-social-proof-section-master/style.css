@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+* {
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: Spartan;
+   padding: 5rem; 
+
+}
+html {
+  font-size: 15px
+}
+
+.section {
+  width: 100%;
+  display: flex;
+    justify-content: space-between;
+
+}
+aside {
+  width: 45%;
+}
+
+
+aside.left h2 {
+  font-size: 2.5rem;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+aside.left p {
+  margin-top: 1rem;
+  color: grey;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+
+
+aside.right ul li{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+  background: hotpink;
+  padding: 0.8rem 0.3rem;
+  border-radius: 12px;
+  font-weight: 500;
+  width: 320px;    
+}
+
+aside.right li:not(:first-child) {
+  margin-left: 2rem;
+}
+
+
+aside.right li:last-child {
+  margin-left: 4rem;
+}
+
+.reviews ul{
+  margin-top: 3rem;
+  display: flex;
+
+}
+
+.reviews li {
+    color: white;
+  font-weight: 500;
+  border-radius: 12px;
+
+  background: brown;
+  padding: 3rem 2rem;
+
+  list-style: none;
+    width: 30%;
+    margin: 1rem;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+    margin-bottom: 1.5rem;
+
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  background: red;
+  margin-right: 20px;
+  border-radius: 200px;
+}
+
+.tag {
+  color: green;
+  padding-top: 0.2rem;
+}
+
+.description {
+  font-size: 0.9rem;
+}
+
