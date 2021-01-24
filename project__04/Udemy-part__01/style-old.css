@@ -1,0 +1,320 @@
+// TODO: Need to fix .section bg-image height when responsive */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fontFamily: "Roboto";
+  --fontsize-nav: 0.95rem;
+}
+
+body {
+  font-family: var(--fontFamily);
+  background: #e8e8e0;
+}
+
+.limited-offer {
+  background: hsl(46deg 100% 80%);
+  padding: 1rem 1.5rem;
+  color: hsl(41deg 100% 17%);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+.nav {
+  min-width: 500px;
+  // padding: 2.3rem 1rem;
+  background: #fff;
+  column-gap: 2%;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // height: 60px;
+  // flex-grow: 1;
+  
+  img {
+    width: 120px;
+    height: 40px;
+  }
+}
+
+.nav * {
+  border: 1px solid red;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #3c3b37;
+  font-size: var(--fontsize-nav);
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.nav a:hover, .nav-item:hover {
+  color: hsl(189, 81%, 31%);
+}
+.nav-items {
+  position: relative;
+  z-index: 20;
+}
+.nav .drop-down {
+  list-style: none;
+  // display: none;
+  position :absolute;
+  opacity: 0;
+  visibility: hidden;
+  // transition:  all 0.4s ease-in-out;
+  width: 300px;
+    background: white;
+  padding: 1.5rem 1.2rem;
+  border: 1px solid #e8e8e0;
+  box-shadow: 0 0 5px 2px #e8e8e0;
+  top: 46px;
+  left: 0;
+}
+
+.categories-list:hover .drop-down{
+  visibility: visible;
+  opacity: 1;
+}
+
+.drop-down .nav-item {
+text-transform: capitalize;
+    display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.search {
+  //   width: 35%;
+  //   flex-basis: 500px;
+  flex-grow: 1;
+  flex-shrink: 2;
+  border: 1px solid #777777;
+  padding: 0.8rem 0.5rem;
+  border-radius: 200px;
+  display: flex;
+  align-items: baseline;
+}
+
+.search__icon {
+  color: #777777;
+  padding-left: 0.5rem;
+  padding-right: 1.2rem;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.cart-list i {
+  font-size: 1.5rem;
+}
+
+.btns {
+  display: flex;
+  column-gap: 0.6rem;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.7rem 1.8rem;
+
+  border: 1px solid hsl(189, 81%, 31%);
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.btn.btn--logIn {
+  color: hsl(189, 81%, 31%);
+  background: white;
+}
+
+.btn.btn--signUp {
+  color: white;
+  background: hsl(189, 81%, 31%);
+}
+
+.hide {
+  display: none;
+}
+
+.section {
+    background-image: url(https://img-a.udemycdn.com/notices/home_banner/image_udlite/8a5d045c-2dd2-4a4d-bb0e-a487af8a5aa0.jpg?8ufXKTZ_1cwslj496s_knWz8D86xGBUDY9RYY8EysIIJ9LpJ_zIw7JstLCxTRQpoL-IPvKWH6iDkgu3Bp5N1pZ4hZhhzXQnL3fb6LOkwKBbabxhDqpE00mgyMSmSKXwRA2qgvG8c-jUlLxtKsiO0cmGS6Kuo8e8qfePIb0O30zQUtdOJi-aKhw);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  width: 99%;
+  margin: 0 8px;
+  height: 25vw;
+//   height: 380px;
+//   min-height: 200px;
+}
+
+.container {
+  position: relative;
+}
+
+.whatToLearn {
+    position: absolute;
+    top: 10vw;
+    // top: 0;
+    left: 5%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 1px;
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 0.5rem;
+
+  box-shadow: 2px 4px 8px hsl(0, 6%, 86%);
+  .h2 {
+    font-size: clamp(1rem,);
+    padding: 0 0 0.8rem;
+  }
+
+  .h2-tag {
+    font-weight: 400;
+    color: #777777;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .search {
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+
+    .btn--search {
+      border: none;
+      outline: none;
+      background: white;
+      color: grey;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.course-section {
+  background: #fff;
+  padding: 1rem 1.2rem;
+  padding-top: calc(2% + 5vw);
+  
+  margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 1200px) {
+    .whatToLearn {
+        top: 100px;
+        left: 25px;
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 1110px) {
+  .udemyForBusiness-list {
+    display: none;
+  }
+
+}
+@media (max-width: 960px) {
+  .limited-offer p {
+    text-align: left;
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  .teachOnUdemy-list {
+    display: none;
+  }
+}
+
+@media (max-width: 825px) {
+  .nav .categories-list,
+  .nav .search__input,
+  .nav .btns {
+    display: none;
+  }
+
+  .nav .search {
+    border: none;
+    flex-grow: 0;
+    .search__icon {
+      padding: 0;
+    }
+  }
+
+  .logo {
+    flex-grow: 1;
+  }
+
+  .hide {
+    display: inline;
+  }
+
+  .section {
+    padding: 0;
+    position: relative;
+    // height: 25vw;
+    // transition: all 0.4s;
+  }
+
+  .course-section {
+      padding-top: 1rem;
+  }
+
+}
+
+@media (max-width:768) {
+    .section {
+        height: 1000px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .course-section .whatToLearn {
+      box-shadow: 0 0 0;
+      margin: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      // bottom: 0;
+      width: 100%;
+      padding: 0;
+    
+      .search {
+        width: 100%;
+      }
+    }
+    
+}
+
+/*# sourceMappingURL=style.css.map

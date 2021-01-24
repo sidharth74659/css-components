@@ -6,213 +6,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redeem Online courses</title>
     <!-- Add a favicon for title -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" async>
+    <!-- <link rel="stylesheet" href="style-old v2.css"> -->
   </head>
 
   <body>
-    <div class="limited-offer">
-      <p><b>New student deal </b>| Sign up now to get courses for as low as ₹455 each. New users only. <br />
-        <b>Ends in <span class="timer">5h 59m 37s</span>.</b></p>
-      <i class="fas fa-times remove"></i>
-    </div>
+    <main class="main-container">
+      <div class="limited-offer hide">
+        <p>
+          <span> <b>Learn without barriers with courses from ₹420 </b>| Courses on sale now until Jan 27.</span>
+          <span><b>3 days left!</b></span>
+        </p>
+        <i class="fas fa-times remove"></i>
+      </div>
 
-    <div class="wrapper">
-      <nav class="nav">
-        <ul class="nav-items">
+      <div class="wrapper">
+        <nav class="nav">
+          <ul class="nav-items">
 
-          <li class="nav__menu__bar hide">☰</li>
+            <li class="nav__menu__bar hide"><i class="fa fa-hamburger"></i> </li>
+            <!-- nav-logo -->
+            <li class="logo">
+              <img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" alt="udemy-logo">
+            </li>
 
-          <li class="logo">
-            <img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" alt="udemy-logo">
-          </li>
+            <!-- nav-categories -->
+            <li class="nav__item  nav__item--categories hide">
+              <a href="#">Categories</a>
+              <ul class="drop-down">
+              </ul>
+            </li>
 
-          <li class="nav__item  nav__item--categories">
-            <a href="#">Categories</a>
-            <ul class="drop-down">
-              <li class="nav-item">
-                <a href="#">development</a>
-                <i class="fa fa-chevron-right"></i>
-              </li>
-
-              <li class="nav-item">
-                <a href="#">Eduacation</a>
-                <i class="fa fa-chevron-right"></i>
-              </li>
-
-              <li class="nav-item">
-                <a href="#">Drawing</a>
-                <i class="fa fa-chevron-right"></i>
-              </li>
-              <li class="nav-item">
-                <a href="#">Painting</a>
-                <i class="fa fa-chevron-right"></i>
-              </li>
-            </ul>
-          </li>
-
-          <li class="search">
-            <button class="fa fa-search search__icon" type="button" title="search"></button>
-            <input class="search__input" type="text" placeholder="Search for anything" aria-label="input-field"">
+            <!-- nav-search -->
+            <li class="search--field hide">
+              <a href="#" n class="fa fa-search search__icon"></a>
+              <input class="search__input" type="text" placeholder="Search for anything" aria-label="input-field"">
           </li>
           
+          <!-- nav-business -->
 
-        <li class=" nav__item nav__item--business">
-            <a href="#">Udemy for Business</a>
-            <ul class="drop-down">
-              <li>
-                <h4 class="nav-item drop-down__text">
-                  Get your team access to over 5,000 top Udemy courses, anytime, anywhere.
-                </h4>
-              </li>
+        <li class=" nav__item nav__item--business hide">
+              <a href="#">Udemy for Business</a>
+              <ul class="drop-down">
+                <li>
+                  <h4 class="nav-item drop-down__text">
+                    Get your team access to over 5,000 top Udemy courses, anytime, anywhere.
+                  </h4>
+                </li>
 
-              <li class="nav-item">
-                <button class="btn btn--drop-down" type="button" title="Try-udemy">Try Udemy for Business</button>
+                <li class="nav-item">
+                  <button class="btn btn--drop-down" type="button" title="Try-udemy">Try Udemy for Business</button>
 
-              </li>
-            </ul>
-          </li>
+                </li>
+              </ul>
+            </li>
 
-          <li class="nav__item nav__item--teach">
-            <a href="#">Teach on Udemy</a>
-            <ul class="drop-down">
-              <li>
-                <h4 class="nav-item drop-down__text">
-                  Turn what you know into an opportunity and reach millions around the world.
-                </h4>
-              </li>
+            <!-- nav-teach -->
+            <li class="nav__item nav__item--teach hide">
+              <a href="#">Teach on Udemy</a>
+              <ul class="drop-down">
+                <li>
+                  <h4 class="nav-item drop-down__text">
+                    Turn what you know into an opportunity and reach millions around the world.
+                  </h4>
+                </li>
 
-              <li class="nav-item">
-                <button class="btn btn--drop-down" type="button" title="Try-udemy">Learn More</button>
+                <li class="nav-item">
+                  <button class="btn btn--drop-down" type="button" title="Try-udemy">Learn More</button>
 
-              </li>
-            </ul>
-          </li>
+                </li>
+              </ul>
+            </li>
+            <!-- nav-mobile-search -->
+            <li class="mobile-search hide"><button class="fa fa-search search__icon hide" type="button"
+                title="search"></button></li>
 
-          <li class="hide"><button class="fa fa-search search__icon" type="button" title="search"></button></li>
+            <!-- nav-cart -->
+            <li class="nav__item nav__item--cart  hide is-hovered">
+              <a href="#"><i class="fa fa-shopping-cart cart__icon"></i></a>
+              <ul class="drop-down">
+                <li class="nav-item drop-down__text">
+                  Your cart is empty.
+                </li>
 
-          <li class="nav__item nav__item--cart is-hovered">
-            <a href="#"><i class="fa fa-shopping-cart cart__icon"></i></a>
-            <ul class="drop-down">
-              <li class="nav-item drop-down__text">
-                Your cart is empty.
-              </li>
+                <li class="nav-item">
+                  <h4><a href="#">Keep shopping</a></h4>
+                </li>
+              </ul>
+            </li>
+            <!-- nav-btns -->
+            <li class="btns hide">
+              <button class="btn btn--logIn" type="button" title="sign">Log in</button>
+              <button class="btn btn--signUp" type="button" title="sign">Sign up</button>
+            </li>
+          </ul>
 
-              <li class="nav-item">
-                <h4><a href="#">Keep shopping</a></h4>
-              </li>
-            </ul>
-          </li>
+        </nav>
 
-          <li class="btns">
-            <button class="btn btn--logIn" type="button" title="sign">Log in</button>
-            <button class="btn btn--signUp" type="button" title="sign">Sign up</button>
-          </li>
-        </ul>
+        <div class="container">
 
-      </nav>
-      
-      <div class="container">
-
-        <section class="section">
-        </section>
-
-        <section class="course-section">
-          <div class="whatToLearn">
-            <h2 class="h2">Dream up</h2>
-            <p class="h2-tag">Ambition accepted. Learn the latest skills to reach your professional goals.</p>
-
-            <div class="search-toLearn">
-              <input type="text" class="search__input" placeholder="What do you want to learn?" aria-label="search">
-              <button class="fa fa-search btn--search" type="button" title="search"></button>
-            </div>
-          </div>
-
-          <section class="speciality">
-            <ul>
-              <li>
-                <i class="fa fa-thumbs-up"></i>
-              </li>
-              <li class="content">
-                <h3>130,000 online courses
-                </h3>
-                <p>Enjoy a variety of fresh topics</p>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <i class="fa fa-thumbs-up"></i>
-              </li>
-              <li class="content">
-                <h3>Expert instruction</h3>
-                <p>Find the right instructor for you</p>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <i class="fa fa-thumbs-up"></i>
-              </li>
-              <li class="content">
-                <h3>Lifetime access</h3>
-                <p>Learn on your schedule</p>
-              </li>
-            </ul>
-          </section>
-
-
-          <section class="speciality">
-            <ul>
-              <li>
-                <i class="fa fa-thumbs-up"></i>
-              </li>
-              <li class="content">
-                <h3>1Go at your own pace
-                </h3>
-                <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <i class="fa fa-thumbs-up"></i>
-              </li>
-              <li class="content">
-                <h3>Learn from industry experts</h3>
-                <p>Select from top instructors around the world</p>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <i class="fa fa-thumbs-up"></i>
-              </li>
-              <li class="content">
-                <h3>Find video courses on almost any topic</h3>
-                <p>Build your library for your career and personal growth</p>
-              </li>
-            </ul>
-          </section>
-
-
-          <section class="explore">
-            <h2 class="h2">The world's largest selection of courses</h2>
-            <p class="h2-tag">Choose from 130,000 online video courses with new additions published every month</p>
-<hr>
-            <ul class="course-catalogue">
-              <li class="course-name"><div class="courses"><span>Python</span><i class="fa fa-arrow-down arrow-emoji"></i></div></li>
-              <li class="course-name"><div class="courses"><span>Excel</span><i class="fa fa-arrow-down arrow-emoji"></i></div></li>
-              <li class="course-name"><div class="courses"><span>Web Development</span><i class="fa fa-arrow-down arrow-emoji"></i></div></li>
-              <li class="course-name"><div class="courses"><span>Javascript</span><i class="fa fa-arrow-down arrow-emoji"></i></div></li>
-              <li class="course-name"><div class="courses"><span>Data Science</span><i class="fa fa-arrow-down arrow-emoji"></i></div></li>
-              <li class="course-name"><div class="courses"><span>Drawing</span><i class="fa fa-arrow-down arrow-emoji"></i></div></li>
-            </ul>
+          <section class="img-section">
 
           </section>
 
-          <article class="course-details">
+          <section class="course-section">
+            <aside class="whatToLearn">
+              <div class="search-toLearn">
+                <input type="text" class="search__input" placeholder="What do you want to learn?" aria-label="search">
+                <a href="#" class="fa fa-search btn--search"></a>
+              </div>
+            </aside>
+            <!--             
+            <section class="speciality">
+              <ul>
+                <li>
+                  <i class="fa fa-thumbs-up"></i>
+                </li>
+                <li class="content">
+                  <h3>130,000 online courses
+                  </h3>
+                  <p>Enjoy a variety of fresh topics</p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <i class="fa fa-thumbs-up"></i>
+                </li>
+                <li class="content">
+                  <h3>Expert instruction</h3>
+                  <p>Find the right instructor for you</p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <i class="fa fa-thumbs-up"></i>
+                </li>
+                <li class="content">
+                  <h3>Lifetime access</h3>
+                  <p>Learn on your schedule</p>
+                </li>
+              </ul>
+            </section> -->
+            <!-- 
+
+            <section class="speciality">
+              <ul>
+                <li>
+                  <i class="fa fa-thumbs-up"></i>
+                </li>
+                <li class="content">
+                  <h3>1Go at your own pace
+                  </h3>
+                  <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <i class="fa fa-thumbs-up"></i>
+                </li>
+                <li class="content">
+                  <h3>Learn from industry experts</h3>
+                  <p>Select from top instructors around the world</p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <i class="fa fa-thumbs-up"></i>
+                </li>
+                <li class="content">
+                  <h3>Find video courses on almost any topic</h3>
+                  <p>Build your library for your career and personal growth</p>
+                </li>
+              </ul>
+            </section>  -->
+
+            <section class="explore">
+              <h2 class="h2">The world's largest selection of courses</h2>
+              <p class="h2-tag">Choose from 130,000 online video courses with new additions published every month</p>
+              <hr>
+              <ul class="course-catalogue">
+                <li class="course-name">
+                  <div class="courses"><span>Python</span><i class="fa fa-arrow-down arrow-emoji"></i></div>
+                  <ul class="expanded-course-container ">
+                    <!-- c 1 -->
+                    <ul class="expanded-course">
+                      <li class="course__img"><img
+                          src="https://img-a.udemycdn.com/course/240x135/950390_270f_3.jpg?YTTS7m2UfwkHEgN9yVw2hQVV9nMOc7fA3-FJ5PZYP_Z1CRd7hGn3Clz_SkFVlYU11pJuv0xynI0q8ZcW0Cwr_5yuiu-Qg3zEGXfFd9CHSiWnznmmO8FMKqziHNXkwj4"
+                          alt="course_logo"></li>
+                      <li class="course__title">
+                        <h4>2021 Complete Python Bootcamp From Zero to Hero in Python</h4>
+                      </li>
+                      <li class="course__creator">
+                        <p>Jose Portillia</p>
+                      </li>
+                      <li class="course__rating">
+                        <div class="rating-number">4.6</div>
+                        <div class="rating-icon">♣♣♣♣♣</div>
+                        <div class="rating-count">(341,058)</div>
+                      </li>
+                      <li class="course__price">
+                        <div class="discount-price"><b>$499</b></div>
+                        <div class="original-price">$599</div>
+                      </li>
+                      <li class="course__popularity">Bestseller</li>
+                    </ul>
+                    <!-- c 2 -->
+
+                    <ul class="expanded-course">
+                      <li class="course__img"><img
+                          src="https://img-a.udemycdn.com/course/240x135/950390_270f_3.jpg?YTTS7m2UfwkHEgN9yVw2hQVV9nMOc7fA3-FJ5PZYP_Z1CRd7hGn3Clz_SkFVlYU11pJuv0xynI0q8ZcW0Cwr_5yuiu-Qg3zEGXfFd9CHSiWnznmmO8FMKqziHNXkwj4"
+                          alt="course_logo"></li>
+                      <li class="course__title">
+                        <h4>2021 Complete Python Bootcamp From Zero to Hero in Python</h4>
+                      </li>
+                      <li class="course__creator">
+                        <p>Jose Portillia</p>
+                      </li>
+                      <li class="course__rating">
+                        <div class="rating-number">4.6</div>
+                        <div class="rating-icon">♣♣♣♣♣</div>
+                        <div class="rating-count">(341,058)</div>
+                      </li>
+                      <li class="course__price">
+                        <div class="discount-price"><b>$499</b></div>
+                        <div class="original-price">$599</div>
+                      </li>
+                      <li class="course__popularity">Bestseller</li>
+                    </ul>
+                    <!-- c 3 -->
+
+                    <ul class="expanded-course">
+                      <li class="course__img"><img
+                          src="https://img-a.udemycdn.com/course/240x135/950390_270f_3.jpg?YTTS7m2UfwkHEgN9yVw2hQVV9nMOc7fA3-FJ5PZYP_Z1CRd7hGn3Clz_SkFVlYU11pJuv0xynI0q8ZcW0Cwr_5yuiu-Qg3zEGXfFd9CHSiWnznmmO8FMKqziHNXkwj4"
+                          alt="course_logo"></li>
+                      <li class="course__title">
+                        <h4>2021 Complete Python Bootcamp From Zero to Hero in Python</h4>
+                      </li>
+                      <li class="course__creator">
+                        <p>Jose Portillia</p>
+                      </li>
+                      <li class="course__rating">
+                        <div class="rating-number">4.6</div>
+                        <div class="rating-icon">♣♣♣♣♣</div>
+                        <div class="rating-count">(341,058)</div>
+                      </li>
+                      <li class="course__price">
+                        <div class="discount-price"><b>$499</b></div>
+                        <div class="original-price">$599</div>
+                      </li>
+                      <li class="course__popularity">Bestseller</li>
+                    </ul>
+
+                    <!-- c 4 -->
+                    <ul class="expanded-course">
+                      <li class="course__img"><img
+                          src="https://img-a.udemycdn.com/course/240x135/950390_270f_3.jpg?YTTS7m2UfwkHEgN9yVw2hQVV9nMOc7fA3-FJ5PZYP_Z1CRd7hGn3Clz_SkFVlYU11pJuv0xynI0q8ZcW0Cwr_5yuiu-Qg3zEGXfFd9CHSiWnznmmO8FMKqziHNXkwj4"
+                          alt="course_logo"></li>
+                      <li class="course__title">
+                        <h4>2021 Complete Python Bootcamp From Zero to Hero in Python</h4>
+                      </li>
+                      <li class="course__creator">
+                        <p>Jose Portillia</p>
+                      </li>
+                      <li class="course__rating">
+                        <div class="rating-number">4.6</div>
+                        <div class="rating-icon">♣♣♣♣♣</div>
+                        <div class="rating-count">(341,058)</div>
+                      </li>
+                      <li class="course__price">
+                        <div class="discount-price"><b>$499</b></div>
+                        <div class="original-price">$599</div>
+                      </li>
+                      <li class="course__popularity">Bestseller</li>
+                    </ul>
+                  </ul>
+                </li>
+                <li class="course-name">
+                  <div class="courses"><span>Excel</span><i class="fa fa-arrow-down arrow-emoji"></i></div>
+                </li>
+                <li class="course-name">
+                  <div class="courses"><span>Web Development</span><i class="fa fa-arrow-down arrow-emoji"></i></div>
+                </li>
+                <li class="course-name">
+                  <div class="courses"><span>Javascript</span><i class="fa fa-arrow-down arrow-emoji"></i></div>
+                </li>
+                <li class="course-name">
+                  <div class="courses"><span>Data Science</span><i class="fa fa-arrow-down arrow-emoji"></i></div>
+                </li>
+                <li class="course-name">
+                  <div class="courses"><span>Drawing</span><i class="fa fa-arrow-down arrow-emoji"></i></div>
+                </li>
+              </ul>
+              </ul>
+
+            </section>
+
+            <!-- <article class="course-details">
               <ul class="course">
-                <li class="course__img"><img src="https://img-a.udemycdn.com/course/240x135/950390_270f_3.jpg?YTTS7m2UfwkHEgN9yVw2hQVV9nMOc7fA3-FJ5PZYP_Z1CRd7hGn3Clz_SkFVlYU11pJuv0xynI0q8ZcW0Cwr_5yuiu-Qg3zEGXfFd9CHSiWnznmmO8FMKqziHNXkwj4" alt="course_logo"></li>
-                <li class="course__title"><h4>2021 Complete Python Bootcamp From Zero to Hero in Python</h4></li>
-                <li class="course__creator"><p>Jose Portillia</p></li>
+                <li class="course__img"><img
+                    src="https://img-a.udemycdn.com/course/240x135/950390_270f_3.jpg?YTTS7m2UfwkHEgN9yVw2hQVV9nMOc7fA3-FJ5PZYP_Z1CRd7hGn3Clz_SkFVlYU11pJuv0xynI0q8ZcW0Cwr_5yuiu-Qg3zEGXfFd9CHSiWnznmmO8FMKqziHNXkwj4"
+                    alt="course_logo"></li>
+                <li class="course__title">
+                  <h4>2021 Complete Python Bootcamp From Zero to Hero in Python</h4>
+                </li>
+                <li class="course__creator">
+                  <p>Jose Portillia</p>
+                </li>
                 <li class="course__rating">
                   <div class="rating-number">4.6</div>
                   <div class="rating-icon">♣♣♣♣♣</div>
@@ -225,10 +325,10 @@
                 <li class="course__popularity">Bestseller</li>
               </ul>
 
-          </article>
-        </section>
+            </article> -->
+          </section>
+        </div>
       </div>
-    </div>
 
 
       <section class="top-categories">
@@ -239,43 +339,50 @@
         <ul>
           <li>
             <div class="wrap-category">
-              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg" alt="top category image" class="top-category__image">
+              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg"
+                alt="top category image" class="top-category__image">
               <h3 class="top-category__name">Design</h3>
             </div>
           </li>
           <li>
             <div class="wrap-category">
-              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg" alt="top category image" class="top-category__image">
+              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg"
+                alt="top category image" class="top-category__image">
               <h3 class="top-category__name">Design</h3>
             </div>
           </li>
           <li>
             <div class="wrap-category">
-              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg" alt="top category image" class="top-category__image">
+              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg"
+                alt="top category image" class="top-category__image">
               <h3 class="top-category__name">Design</h3>
             </div>
           </li>
           <li>
             <div class="wrap-category">
-              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg" alt="top category image" class="top-category__image">
+              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg"
+                alt="top category image" class="top-category__image">
               <h3 class="top-category__name">Design</h3>
             </div>
           </li>
           <li>
             <div class="wrap-category">
-              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg" alt="top category image" class="top-category__image">
+              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg"
+                alt="top category image" class="top-category__image">
               <h3 class="top-category__name">Design</h3>
             </div>
           </li>
           <li>
             <div class="wrap-category">
-              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg" alt="top category image" class="top-category__image">
+              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg"
+                alt="top category image" class="top-category__image">
               <h3 class="top-category__name">Design</h3>
             </div>
           </li>
           <li>
             <div class="wrap-category">
-              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg" alt="top category image" class="top-category__image">
+              <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg"
+                alt="top category image" class="top-category__image">
               <h3 class="top-category__name">Design</h3>
             </div>
           </li>
@@ -295,16 +402,19 @@
               <h3>Development</h3>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
           </ul>
           <ul>
@@ -312,16 +422,19 @@
               <h3>Development</h3>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
           </ul>
           <ul>
@@ -329,16 +442,19 @@
               <h3>Development</h3>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
           </ul>
           <ul>
@@ -346,16 +462,19 @@
               <h3>Development</h3>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
             <li class="featured-course">
-              <h3  class="featured-course__name"><a href="#">Python</a></h3>
-            <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students</div>
+              <h3 class="featured-course__name"><a href="#">Python</a></h3>
+              <div class="featured-course__members"><span class="featured-course__count">23,561,524</span> students
+              </div>
             </li>
           </ul>
         </div>
@@ -451,8 +570,8 @@
           <p>© 2021 Udemy, Inc.</p>
         </section>
       </footer>
-
-      <script src="script.js"></script>
+    </main>
+    <script src="script.js"></script>
   </body>
 
 </html>

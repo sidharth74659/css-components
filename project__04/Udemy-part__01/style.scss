@@ -339,15 +339,27 @@ body {
           transition: transform 0.4s ease-in-out;
         }
       }
+    }
 
-      .courses.expand {
-        // color: red;
-        .arrow-emoji {
-          transform: rotate(180deg);
-          transition: transform 0.2s ease-in-out;
-        }
+    .expand-course {
+      opacity: 0;
+      display: none;
+        transition: all 10s ease-in;
+
+    }
+
+    .course-name.expand .courses {
+      color: red;
+      .arrow-emoji {
+        transform: rotate(180deg);
+        transition: transform 0.2s ease-in-out;
       }
     }
+    .course-name.expand .expand-course {
+      opacity: 1;
+
+        display: block;
+      }
   }
 }
 
@@ -441,11 +453,10 @@ body {
     flex-wrap: wrap;
     flex-grow: 1;
 
-
     li {
       margin: 0.5rem;
-      border:1px solid #777;
-      flex-basis:170px;
+      border: 1px solid #777;
+      flex-basis: 170px;
     }
   }
 
@@ -460,7 +471,6 @@ body {
     h3 {
       padding: 1rem 1rem 2.5rem;
     }
-
   }
 }
 
