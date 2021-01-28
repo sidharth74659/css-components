@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 2rem 0;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.nav {
+  background: #0e2957;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.nav span {
+  flex-grow: 1;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.nav .name {
+  font-size: 1rem;
+}
+
+.label {
+  display: block;
+  margin: 1.5rem;
+}
+
+.input {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid #535353;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+  .nav span {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}

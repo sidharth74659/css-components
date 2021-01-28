@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Button-text-color: #595959;
+  --Button-border-color: #4a4a4a;
+  --Button-hover-text-color: #9a9a9a;
+  --Button-hover-border-color: #ababab;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 200px;
+  height: 100px;
+  padding: 1rem 2rem;
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.5rem;
+  border: 1.9px solid #595959;
+  background: transparent;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.btn:hover {
+  background: #9a9a9a;
+  color: white;
+}
+
+.text {
+  display: block;
+  opacity: 1;
+  padding: 1rem 0;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: all 2s;
+}
+
+.container.hide .text {
+  display: none;
+  opacity: 0;
+}
+
+.container .btn::before {
+  content: "show";
+}
+
+.container .btn::after {
+  content: "!";
+}
+
+.container.hide .btn::before {
+  content: "hide";
+}
+
+.container .btn::after {
+  content: "?";
+}
