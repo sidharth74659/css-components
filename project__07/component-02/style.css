@@ -1,0 +1,145 @@
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap'); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background: #1a1b39;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  color: white;
+  width: 360px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.header h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 250px;
+  margin: 0 auto 1.6rem;
+  line-height: 2rem;
+}
+
+.header p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 3px;
+  padding: 2.3rem 2rem;
+  position: relative;
+}
+
+.card .title {
+  font-size: 0.9rem;
+  letter-spacing: 0.1px;
+}
+.price__list {
+  margin: 1rem 0 0;
+}
+.price__list li {
+  padding: 1.3rem 0;
+  padding-right: 8rem;
+}
+.price__list h5 {
+  font-size: 0.8rem;
+}
+
+.price__list small {
+  font-size: 0.75rem;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+.offer__list {
+  padding: 1rem 0;
+}
+.offer__list li {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+.offer__list i {
+  margin-right: 1rem;
+  width: 24px;
+  height: 24px;
+  background: #facade60;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: normal;
+  background: hsl(228, 70%, 54%);
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: hsl(228, 70%, 60%);
+}
+
+.price--card::before {
+  content: "";
+  z-index: -100;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #3557dc;
+  position: absolute;
+  top: 65%;
+  left: -30px;
+}
+
+.offer--card::after {
+  content: "";
+  z-index: -100;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #3557dc;
+  position: absolute;
+  bottom: 60%;
+  right: -90px;
+}
+
+.credits {
+  color: white;
+  margin: 1rem 0;
+}
+
+.credits a {
+  color: hotpink;
+}
