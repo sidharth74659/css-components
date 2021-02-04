@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+::selection {
+  background: #f5ff78;
+}
+
+body {
+  background: #ffffff;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 10rem 2rem 6rem;
+}
+
+.nav .logo {
+  width: 100px;
+  height: 40px;
+  background: url(https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/5fe268cd0a4b579cf22e3975_ramp-circle-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.nav .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #777;
+}
+.nav .nav-list .nav__item {
+  padding: 0 1rem;
+  text-transform: capitalize;
+}
+.nav .nav-list .btn {
+  background: none;
+  border: none;
+  color: #1b1b1b;
+  font-size: 1.09rem;
+  cursor: pointer;
+}
+.nav .nav-list .nav__item:hover {
+  text-decoration: underline;
+  color: #000000;
+  cursor: pointer;
+  text-decoration-thickness: 10%;
+}
+
+.header {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  color: #777;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.subtitle b {
+  font-weight: normal;
+  color: #252525;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title span {
+  font-size: 6.3rem;
+  color: #252525;
+}
+.title .title__img {
+  background: url(https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/5fe274a86044ef80b9a4474e_updated-fanned.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 0;
+  width: 90%;
+  min-height: 450px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 40px;
+}
+.title span.tag {
+  margin-top: -6.5rem;
+}
+
+.credits {
+  width: 100px;
+  height: 40px;
+  background: url(https://land-book.com/images/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 0;
+  position: absolute;
+  margin: 3rem;
+  bottom: 0;
+  right: 0;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.credits:hover {
+  animation: none;
+}
+
+@keyframes bounce {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
