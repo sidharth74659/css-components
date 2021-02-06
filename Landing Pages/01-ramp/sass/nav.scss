@@ -1,0 +1,42 @@
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 10rem 2rem 6rem;
+}
+
+.nav .logo {
+  width: 100px;
+  height: 40px;
+  background: url(https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/5fe268cd0a4b579cf22e3975_ramp-circle-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.nav .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #777;
+
+  .nav__item {
+    padding: 0 1rem;
+    text-transform: capitalize;
+  }
+
+  .btn {
+    background: none;
+    border: none;
+    color: #1b1b1b;
+    font-size: 1.09rem;
+    cursor: pointer;
+  }
+
+  .nav__item:hover {
+    text-decoration: underline;
+    color: #000000;
+    cursor: pointer;
+    text-decoration-thickness: 10%;
+  }
+}

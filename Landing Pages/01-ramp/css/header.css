@@ -1,3 +1,119 @@
+.header {
+  padding: 4rem 0;
+}
 
+.content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  color: #777;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.subtitle b {
+  font-weight: normal;
+  color: #2e2e27;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title span {
+  font-size: 6.3rem;
+  color: #252525;
+}
+.title .title__img {
+  background: url(https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/5fe274a86044ef80b9a4474e_updated-fanned.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 0;
+  width: 90%;
+  min-height: 450px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 40px;
+}
+.title span.tag {
+  margin-top: -6.5rem;
+}
+
+.get-ramp {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+.get-ramp .input-field {
+  width: 95%;
+  display: flex;
+  gap: 1rem;
+}
+.get-ramp p {
+  color: #918f7abe;
+  font-size: 1.1rem;
+  align-self: start;
+  padding-left: 1.5rem;
+}
+
+.input-field .input-email {
+  flex: 1;
+  padding: 1.2rem 1rem;
+  border: 2px solid #918f7abe;
+  font-size: 1.3rem;
+}
+.input-field .btn {
+  border: none;
+  text-transform: capitalize;
+  background: black;
+  padding: 1.5rem 5rem;
+  color: white;
+  font-size: 1.3rem;
+}
+.input-field .input-email:hover {
+  border: 2px solid black;
+}
+.input-field .btn:hover {
+  background: #f5ff78;
+  color: black;
+}
+
+.logo-list {
+  margin: 4rem auto;
+  width: 80%;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-template-rows: repeat(auto-fit);
+  gap: 2.5rem 1rem;
+}
+.logo-list .logo-item {
+  border: 1px solid black;
+  width: 150px;
+  height: 60px;
+  transition: transform 0.2s ease-out;
+}
+.logo-list .logo-item:hover {
+  transform: scale(1.05);
+}
+
+.header > p {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #787868;
+}
+.header > p a {
+  text-decoration-color: black;
+  color: black;
+  font-size: 1.15rem;
+}
 
 /*# sourceMappingURL=header.css.map */
