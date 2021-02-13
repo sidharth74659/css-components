@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="header">
+        <h2 class="h2">Our Pricing</h2>
+
+        <div class="switch">
+          <span class="annualy">Annually</span>
+          <label class="slider">
+            <input type="checkbox" class="input" aria-hidden="true" aria-label="toggle" />
+            <span class="slider__ball"></span>
+          </label>
+          <span class="monthly">Monthly</span>
+        </div>
+      </header>
+
+      <ul class="grid-container">
+        <li class="grid-item">
+          <h3 class="plan">Basic</h3>
+          <p class="price">&dollar;<span class="cost">19.99</span></p>
+          <ul class="features">
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <button class="btn">Learn More</button>
+        </li>
+        <li class="grid-item gradient">
+          <h3 class="plan">Professional</h3>
+          <p class="price">&dollar;<span class="cost">24.99</span></p>
+          <ul class="features">
+            <li>1 TB Storage</li>
+            <li>5 Users Allowed</li>
+            <li>Send up to 10 GB</li>
+          </ul>
+          <button class="btn">Learn More</button>
+        </li>
+        <li class="grid-item">
+          <h3 class="plan">Master</h3>
+          <p class="price">&dollar;<span class="cost">39.99</span></p>
+          <ul class="features">
+            <li>2 TB Storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20 GB</li>
+          </ul>
+          <button class="btn">Learn More</button>
+        </li>
+      </ul>
+    </main>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://codepen.io/sidharth74659/">Sidharth</a>.
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
