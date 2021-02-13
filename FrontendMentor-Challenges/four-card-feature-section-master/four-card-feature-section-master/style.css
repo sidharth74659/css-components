@@ -1,0 +1,152 @@
+/* * Mobile: 375px */
+/* * Desktop: 1440px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  /* border: 1px solid red; */
+}
+
+:root {
+  /* Primary */
+  --clr-Red-primary: hsl(0, 78%, 62%);
+  --clr-Cyan-primary: hsl(180, 62%, 55%);
+  --clr-Orange-primary: hsl(34, 97%, 64%);
+  --clr-Blue-primary: hsl(212, 86%, 64%);
+  /* Neutral */
+  --clr-Very-Dark-Blue-Neutral: hsl(234, 12%, 34%);
+  --clr-Grayish-Blue-Neutral: hsl(229, 6%, 66%);
+  --clr-Very-Light-Gray-Neutral: hsl(0, 0%, 98%);
+  --fSize: 15px;
+  --fFamily: "Poppins", sans-serif;
+  --fw-normal: 200;
+  --fw-bold: 400;
+  --fw-large: 600;
+}
+
+body {
+  background: var(--clr-Very-Light-Gray-Neutral);
+  font-family: var(--fFamily);
+}
+
+.container {
+  padding: 5rem 2rem;
+}
+
+.header {
+  padding: 1rem 0 4rem;
+  text-align: center;
+}
+
+.h1 {
+  font-weight: 200;
+  color: var(--clr-Very-Dark-Blue-Neutral);
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--clr-Grayish-Blue-Neutral);
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-row-gap: 2.5rem;
+  grid-column-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-item {
+  border-top: hsl(180, 62%, 55%);
+  border-radius: 0.3rem;
+  box-shadow: 0px 5px 10px 0 #757471;
+  padding: 1.5rem 2rem 1rem;
+}
+
+.title {
+  color: var(--clr-Very-Dark-Blue-Neutral);
+}
+
+.subtitle {
+  color: var(--clr-Grayish-Blue-Neutral);
+}
+
+.svg {
+  margin: 1rem 0;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.grid-item:first-child {
+  border-top: 4px solid var(--clr-Cyan-primary);
+}
+
+.grid-item:first-child .svg {
+  background-image: url(images/icon-supervisor.svg);
+}
+
+.grid-item:nth-child(2) {
+  border-top: 4px solid var(--clr-Red-primary);
+}
+
+.grid-item:nth-child(2) .svg {
+  background-image: url(images/icon-team-builder.svg);
+}
+
+.grid-item:nth-child(3) {
+  border-top: 4px solid var(--clr-Orange-primary);
+}
+
+.grid-item:nth-child(3) .svg {
+  background-image: url(images/icon-karma.svg);
+}
+
+.grid-item:nth-child(4) {
+  border-top: 4px solid var(--clr-Blue-primary);
+}
+
+.grid-item:nth-child(4) .svg {
+  background-image: url(images/icon-calculator.svg);
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    /* grid-template-areas: 
+        '. second .'
+        'first second fourth'
+        'first third fourth'
+        '. third .'
+        ; */
+  }
+
+  .grid-item:nth-child(1) {
+    /* grid-area: first; */
+    grid-row: span 2 / 3;
+    align-self: center;
+  }
+
+  .grid-item:nth-child(2) {
+    /* grid-area: second; */
+    grid-row: span 1 / 2;
+  }
+
+  /* TODO: how does it work though without grid-row set for this...  */
+  .grid-item:nth-child(3) {
+    /* grid-area: third; */
+    /* grid-row: span 3 / 4; */
+  }
+
+  .grid-item:nth-child(4) {
+    /* grid-area: fourth; */
+    grid-row: span 2 / 3;
+    align-self: center;
+  }
+}
